@@ -15,11 +15,16 @@ class BooksApp extends React.Component {
       this.setState({ books });
     });
   }
+
+  moveShelf = (book, shelf) => {
+    BooksAPI.update(book, shelf);
+  }
+
   render() {
     return (
       <div className="app">
         <Route exact path='/' render={() =>
-          <MainPage books={this.state.books} />
+          <MainPage books={this.state.books} moveShelf={this.moveShelf} />
         } />
         <Route path='/search' component={SearchPage} />
       </div>

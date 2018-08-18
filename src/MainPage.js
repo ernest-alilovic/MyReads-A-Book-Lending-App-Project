@@ -7,7 +7,7 @@ class MainPage extends Component {
     const shelves = {
       currentlyReading: 'Currently Reading',
       wantToRead: 'Want To Read',
-      read: 'read'
+      read: 'Read'
     };
     return (
       <div className="list-books">
@@ -28,7 +28,7 @@ class MainPage extends Component {
                       {this.props.books
                         .filter(book => book.shelf === shelf)
                         .map(book => (
-                          <Book key={book.title} book={book} />
+                          <Book key={book.title} book={book} moveShelf={this.props.moveShelf} />
                         ))
                       }
                     </ol>
