@@ -13,7 +13,7 @@ Developed as part of my Udacity Front-End Development Nanodegree using the [star
 ## How the App Works
 * The books are sorted into three shelves: Currently Reading, Want to Read and Read.
 * To change a book's shelf or remove a book from your main page, click on the green drop-down button on the book cover.
-* To add new books, click on the green + button on the bottom right corner of the page and enter your query into the search bar
+* To add new books, click on the green button on the bottom right corner of the page and enter your query into the search bar
 
 *Please note that the backend API is limited to a fixed set of search terms.
 
