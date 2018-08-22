@@ -7,7 +7,9 @@ class Book extends Component {
     const bookCover = {
       width: 128,
       height: 193,
-      backgroundImage: `url("${book.imageLinks.thumbnail}")`
+      backgroundImage: `url("${this.props.book.imageLinks
+                  ? this.props.book.imageLinks.thumbnail
+                  : "http://dummyimage.com/128x193/292929/e3e3e3&text=No Cover Available"}")`
     };
     return (
       <li>
