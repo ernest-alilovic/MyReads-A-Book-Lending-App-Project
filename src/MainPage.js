@@ -28,7 +28,7 @@ class MainPage extends Component {
                       {this.props.books
                         .filter(book => book.shelf === shelf)
                         .map(book => (
-                          <Book key={book.title} book={book} moveShelf={this.props.moveShelf} />
+                          <Book key={book.id} book={book} moveShelf={this.props.moveShelf} />
                         ))
                       }
                     </ol>
